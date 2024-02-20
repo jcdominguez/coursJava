@@ -86,5 +86,13 @@ public class Main {
             System.out.println(personne.toString());
             personne.declinerIdentite();
         }
+
+        // Registre de personnes
+        RegistrePersonnesList registrePersonnesList = new RegistrePersonnesList();
+        RegistrePersonnesMap registrePersonnesMap = new RegistrePersonnesMap();
+
+        //GestionEntreeSortiePersonne vigile = new GestionEntreeSortiePersonne(registrePersonnesList);
+        GestionEntreeSortiePersonne vigile = new GestionEntreeSortiePersonne(registrePersonnesMap);
+
     }
 }

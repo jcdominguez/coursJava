@@ -1,5 +1,6 @@
 public abstract class Personne { // extends Object
 
+    private int id;
     private int age;
     private String prenom;
     private String nom;
@@ -53,4 +54,12 @@ public abstract class Personne { // extends Object
     }
 
     public abstract void declinerIdentite();
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 }
