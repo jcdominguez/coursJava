@@ -20,4 +20,11 @@ public class Employe extends Personne {
     public void setDiplome(String diplome) {
         this.diplome = diplome;
     }
+
+    @Override
+    public String toString(){
+        return "Employe : "+ "numeero secu: "+this.numeroSecuriteSociale
+                + "diplome: "+ this.diplome
+                + super.toString();
+    }
 }

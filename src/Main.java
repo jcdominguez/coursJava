@@ -75,5 +75,7 @@ public class Main {
         Employe employe1 = new Employe();
         employe1.setPrenom("Toto");
         employe1.setDiplome("Ingénieur logiciel");
+
+        System.out.println(employe1);
     }
 }
