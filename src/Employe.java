@@ -4,6 +4,12 @@ public class Employe extends Personne {
     private String diplome;
 
 
+    public Employe(String prenom, String nom, String numeroSecuriteSociale, String diplome){
+        super(prenom, nom);
+
+        this.numeroSecuriteSociale = numeroSecuriteSociale;
+        this.diplome = diplome;
+    }
 
     public String getNumeroSecuriteSociale() {
         return numeroSecuriteSociale;

@@ -72,9 +72,7 @@ public class Main {
         System.out.println(jean);
         System.out.println(jean.toString());
 
-        Employe employe1 = new Employe();
-        employe1.setPrenom("Toto");
-        employe1.setDiplome("Ingénieur logiciel");
+        Employe employe1 = new Employe("Michel", "Durand", "xxxxxxx", "Ingénieur logiciel");
 
         System.out.println(employe1);
     }
