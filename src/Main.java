@@ -68,7 +68,7 @@ public class Main {
         Personne jean = new Personne("Jean", "Dominguez");
         System.out.println(jean.getPrenom() + " " + jean.getNom());
 
-        System.out.println(jean.toString());
+        System.out.println(jean);
 
         Employe employe1 = new Employe();
         employe1.setPrenom("Toto");
