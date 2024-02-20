@@ -1,4 +1,4 @@
-public class Personne { // extends Object
+public abstract class Personne { // extends Object
 
     private int age;
     private String prenom;

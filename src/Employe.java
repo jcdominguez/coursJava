@@ -3,6 +3,12 @@ public class Employe extends Personne {
     private String numeroSecuriteSociale;
     private String diplome;
 
+    public Employe(String prenom, String nom) {
+        super(prenom, nom);
+    }
+
+    public Employe() {
+    }
 
     public Employe(String prenom, String nom, String numeroSecuriteSociale, String diplome){
         super(prenom, nom);
@@ -29,7 +35,7 @@ public class Employe extends Personne {
 
     @Override
     public String toString(){
-        return "Employe : "+ "numeero secu: "+this.numeroSecuriteSociale
+        return "Employe : "+ "numero secu: "+this.numeroSecuriteSociale
                 + "diplome: "+ this.diplome
                 + super.toString();
     }

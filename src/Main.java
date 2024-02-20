@@ -16,7 +16,7 @@ public class Main {
         */
 
         Personne alain; // déclaration variable de type Objet. Par défaut valeur null
-        alain = new Personne();
+        alain = new Employe("Alain", "Delon");
         alain.setAge(50);
         alain.setPrenom("Alain");
         alain.setNom("Dupont");
@@ -24,7 +24,7 @@ public class Main {
         alain.feterAnniversaire();
         System.out.println(alain.getAge());
 
-        Personne marie = new Personne();
+        Personne marie = new IntervenantExterne();
         System.out.println(marie);
         marie.setPrenom("Marie");
         marie.setNom("Dufour"); ;
@@ -65,7 +65,7 @@ public class Main {
 
 
         // exemple constructeur avec parametres
-        Personne jean = new Personne("Jean", "Dominguez");
+        Personne jean = new Employe("Jean", "Dominguez");
         System.out.println(jean.getPrenom() + " " + jean.getNom());
 
         // toString() est appellé automatiquement quand on execute un println()
@@ -75,5 +75,15 @@ public class Main {
         Employe employe1 = new Employe("Michel", "Durand", "xxxxxxx", "Ingénieur logiciel");
 
         System.out.println(employe1);
+
+        IntervenantExterne personneAudit = new IntervenantExterne();
+
+        ArrayList<Personne> personnesPresententDansLeBatiment = new ArrayList<>();
+        personnesPresententDansLeBatiment.add(alain);
+        personnesPresententDansLeBatiment.add(marie);
+        personnesPresententDansLeBatiment.add(employe1);
+        for(Personne personne :  personnesPresententDansLeBatiment){
+            System.out.println(personne);
+        }
     }
 }
