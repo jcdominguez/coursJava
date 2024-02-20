@@ -51,4 +51,6 @@ public abstract class Personne { // extends Object
                 ", nom='" + nom + '\'' +
                 '}';
     }
+
+    public abstract void declinerIdentite();
 }

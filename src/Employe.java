@@ -39,4 +39,8 @@ public class Employe extends Personne {
                 + "diplome: "+ this.diplome
                 + super.toString();
     }
+
+    public void declinerIdentite(){
+        System.out.println("Je suis un employé. je m'appelle "+getPrenom()+" "+getNom());
+    }
 }

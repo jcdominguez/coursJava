@@ -83,7 +83,8 @@ public class Main {
         personnesPresententDansLeBatiment.add(marie);
         personnesPresententDansLeBatiment.add(employe1);
         for(Personne personne :  personnesPresententDansLeBatiment){
-            System.out.println(personne);
+            System.out.println(personne.toString());
+            personne.declinerIdentite();
         }
     }
 }

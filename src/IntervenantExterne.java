@@ -9,4 +9,9 @@ public class IntervenantExterne extends Personne {
     public void setSocieteSousTraitante(String societeSousTraitante) {
         this.societeSousTraitante = societeSousTraitante;
     }
+
+    public void declinerIdentite(){
+        System.out.println("Je suis un intervenant externe. je m'appelle "+getPrenom()+" "+getNom()
+                + " je travaille pour "+societeSousTraitante);
+    }
 }
