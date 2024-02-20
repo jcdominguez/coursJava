@@ -67,5 +67,11 @@ public class Main {
         // exemple constructeur avec parametres
         Personne jean = new Personne("Jean", "Dominguez");
         System.out.println(jean.getPrenom() + " " + jean.getNom());
+
+        System.out.println(jean.toString());
+
+        Employe employe1 = new Employe();
+        employe1.setPrenom("Toto");
+        employe1.setDiplome("Ingénieur logiciel");
     }
 }
