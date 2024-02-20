@@ -68,7 +68,9 @@ public class Main {
         Personne jean = new Personne("Jean", "Dominguez");
         System.out.println(jean.getPrenom() + " " + jean.getNom());
 
+        // toString() est appellé automatiquement quand on execute un println()
         System.out.println(jean);
+        System.out.println(jean.toString());
 
         Employe employe1 = new Employe();
         employe1.setPrenom("Toto");
