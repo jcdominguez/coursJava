@@ -73,6 +73,7 @@ public class Main {
         System.out.println(jean.toString());
 
         Employe employe1 = new Employe("Michel", "Durand", "xxxxxxx", "Ingénieur logiciel");
+        employe1.setAge(34);
 
         System.out.println(employe1);
 
@@ -94,5 +95,7 @@ public class Main {
         //GestionEntreeSortiePersonne vigile = new GestionEntreeSortiePersonne(registrePersonnesList);
         GestionEntreeSortiePersonne vigile = new GestionEntreeSortiePersonne(registrePersonnesMap);
 
+        System.out.println("age de Marie: "+marie.getAge());
+        System.out.println("age de Michel: "+employe1.getAge());
     }
 }

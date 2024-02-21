@@ -38,6 +38,7 @@ public class Employe extends Personne {
         return "Employe : "+ "numero secu: "+this.numeroSecuriteSociale
                 + "diplome: "+ this.diplome
                 + super.toString();
+
     }
 
     public void declinerIdentite(){

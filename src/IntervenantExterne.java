@@ -14,4 +14,8 @@ public class IntervenantExterne extends Personne {
         System.out.println("Je suis un intervenant externe. je m'appelle "+getPrenom()+" "+getNom()
                 + " je travaille pour "+societeSousTraitante);
     }
+
+    public int getAge(){
+        return -1;
+    }
 }
